@@ -1,8 +1,11 @@
-// import fuzzy javascript
-const fuzzyis = require('fuzzyis');
+// define fuzzy library
 
-// define fuzzy 
+import {  } from "fuzzy";
 
-const DefineFuzzy = () => {
-    
-}
+// definisikan variable
+
+const temperature = new fuzzy.variable("temperature", [
+        new fuzzy.temp("")
+])
+
+// besok dilanjutkan
