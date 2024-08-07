@@ -1,14 +1,14 @@
 {
   "name": "fuzzy-example-javascript",
   "module": "src/index.js",
-  "type": "module",
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
+  "type": "module",
   "dependencies": {
-    "fuzzyis": "^1.0.2"
+    "fuzzy": "^0.1.3"
   }
 }
