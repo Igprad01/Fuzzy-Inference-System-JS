@@ -1,0 +1,3 @@
+fuzzy inference system mamdani mendeteksi suhu pada dirumah dengan AC dengan ketentuan:
+
+Jika kondisi panas maka ac akan menyala dengan 
