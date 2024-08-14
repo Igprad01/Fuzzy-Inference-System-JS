@@ -9,6 +9,3 @@ const temperature = new fuzzy.variable("temperature", [
         new fuzzy.temp("sedang", new fuzzy.Triangular(15,20,25))
 
 ]);
-
-
-// besok dilanjutkan

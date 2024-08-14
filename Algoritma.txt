@@ -1,3 +1,38 @@
-fuzzy inference system mamdani mendeteksi suhu pada dirumah dengan AC dengan ketentuan:
+Fuzzy untuk mengontrol AC Dirumah 
 
-Jika kondisi panas maka ac akan menyala dengan 
+inisialisasi Sistem Fuzzy:
+
+deklarasikan sistem fuzzy : 
+input suhu ruangan yang terdiri dari : dingin, sejuk, hangat dan Panas
+output temperature ac : low, medium dan high
+
+variable keanggotaan fuzzy:
+suhu ruangan: 
+dingin : 0 - 25 
+sejuk : 26 - 30
+hangat : 31 - 35
+panas : 36 - 42
+
+output temperature AC : 
+dingin : 16 - 21 derajat
+hangat : 21 - 25 derajat
+panas : 26 - 30 derajat
+
+rule fuzzy:
+
+Jika suhu ruangan dingin maka temperature ac berjalan panas 
+jika suhu ruangan sejuk maka temperature ac berjalan Panas
+jika suhu ruangan hangat maka temperature ac berjalan hangat
+jika suhu ruangan panas maka temperature ac berjalan dingin
+
+inferensi:
+evaluasi hal diatas
+
+agresiasi:
+
+dijumlahkan nilai himpunan fuzzy diatas
+
+defuzzifikasi:
+mengontrol ac berdasarkan suhu ruangan 
+
+
