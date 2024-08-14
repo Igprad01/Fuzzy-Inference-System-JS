@@ -28,9 +28,6 @@ jika suhu ruangan panas maka temperature ac berjalan dingin
 
 rule suhu ruangan 4 * suhu output temperature ac 3 : 12 rule
 
-
-
-
 inferensi:
 evaluasi hal diatas
 
