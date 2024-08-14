@@ -25,7 +25,25 @@ const FuzzySystem = new fuzzy.system("AC", [suhuRuangan], [SuhuAC]);
 
 // rule fuzzy
 
-FuzzySystem = [
-        // disini rule nya
+FuzzySystem.rules = [
+        new fuzzy.rule(
+                new fuzzy.AND(suhuRuangan.is("dingin")),
+                SuhuAC.is("panas")
+        ),
+        new fuzzy.rule(
+                new fuzzy.AND(suhuRuangan.is("sejuk")),
+                SuhuAC.is("panas")
+        ),
+        new fuzzy.rule(
+                new fuzzy.AND(suhuRuangan.is("hangat")),
+                SuhuAC.is("hangat")
+        ),
+        new fuzzy.rule(
+                new fuzzy.AND(suhuRuangan.is("panas")),
+                SuhuAC.is("dingin")
+        )
 ];
+
+// proses inferensi 
+
 
