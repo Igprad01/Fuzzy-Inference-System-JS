@@ -25,6 +25,12 @@ jika suhu ruangan sejuk maka temperature ac berjalan Panas
 jika suhu ruangan hangat maka temperature ac berjalan hangat
 jika suhu ruangan panas maka temperature ac berjalan dingin
 
+
+rule suhu ruangan 4 * suhu output temperature ac 3 : 12 rule
+
+
+
+
 inferensi:
 evaluasi hal diatas
 
