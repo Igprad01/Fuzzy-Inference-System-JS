@@ -42,7 +42,7 @@ const ControlFuzzyAC = (TemperatureRuangan) => {
         return `Ac temperature set ${hitungAgresiasi.toFixed(2)} derajat`;
 };
 
-const suhuRuanganSaatIni = 32;
+const suhuRuanganSaatIni = 38;
 const action = ControlFuzzyAC(suhuRuanganSaatIni);
 console.log(action);
  
