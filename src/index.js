@@ -27,10 +27,10 @@ const RuleFuzzyAC = (fuzzyTemp) => {
 };
 
 const agresiasiFuzzyAC = (AcStatus) => {
-        const hitungAgresiasi = AcStatus.cold * 16 + AcStatus.warm * 21 + AcStatus.hot * 30;
+        const hitungAgresiasi = AcStatus.cold * 16 + AcStatus.warm * 25 + AcStatus.hot * 30;
         const SumAgresiasi = AcStatus.cold + AcStatus.warm + AcStatus.hot;
-        return hitungAgresiasi / SumAgresiasi
-}
+        return hitungAgresiasi / SumAgresiasi;
+};
 
 // control Fuzzy Ac
 
@@ -42,7 +42,7 @@ const ControlFuzzyAC = (TemperatureRuangan) => {
         return `Ac temperature set ${hitungAgresiasi.toFixed(2)} derajat`;
 };
 
-const suhuRuanganSaatIni = 38;
+const suhuRuanganSaatIni = 37;
 const action = ControlFuzzyAC(suhuRuanganSaatIni);
 console.log(action);
  
