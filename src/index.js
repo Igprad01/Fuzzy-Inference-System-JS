@@ -11,7 +11,7 @@ const SuhuAC = (AC) => {
         return {
                 cold:Math.max(0, Math.min(1, (20 - AC) / 4)),
                 warm:Math.max(0, Math.min(1, (AC - 21) / 4 (25 - AC) /4 )),
-                hot: Math.max(0, Math.min(1, (AC - 26) / 4))
+                hot: Math.max(0, Math.min(1, (AC - 26) / 4(32 - AC) / 4))
         };
 };
 
@@ -20,17 +20,14 @@ const SuhuAC = (AC) => {
 
 const RuleFuzzyAC = (fuzzyTemp) => {
         return {
-                cold: Math.max(fuzzyTemp.dingin),
+                cold: Math.max(fuzzyTemp.panas),
                 warm: Math.max(fuzzyTemp.hangat),
                 hot: Math.max(fuzzyTemp.dingin, fuzzyTemp.sejuk)
         };
 };
 
-
-
-
 const agresiasiFuzzyAC = (AcStatus) => {
-        const hitungAgresiasi = AcStatus.cold * 16 + AcStatus.warm * 21 + AcStatus.hot * 26;
+        const hitungAgresiasi = AcStatus.cold * 16 + AcStatus.warm * 21 + AcStatus.hot * 30;
         const SumAgresiasi = AcStatus.cold + AcStatus.warm + AcStatus.hot;
         return hitungAgresiasi / SumAgresiasi
 }
@@ -45,7 +42,7 @@ const ControlFuzzyAC = (TemperatureRuangan) => {
         return `Ac temperature set ${hitungAgresiasi.toFixed(2)} derajat`;
 };
 
-const suhuRuanganSaatIni = 39;
+const suhuRuanganSaatIni = 32;
 const action = ControlFuzzyAC(suhuRuanganSaatIni);
 console.log(action);
  
